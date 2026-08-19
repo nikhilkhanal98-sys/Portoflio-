@@ -22,7 +22,8 @@ jobs:
       - name: Unzip the site archive
         run: |
           mkdir -p _site
-          unzip -q nikhil-portfolio-website_1.zip.zip -d _site
+          unzip -q sitepart1.zip -d _site
+          unzip -q sitepart2.zip -d _site
           rm -rf _site/__MACOSX
           touch _site/.nojekyll
           ls -la _site
